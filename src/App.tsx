@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import TradingSection from './components/TradingSection'
 import AccountOrderHistory from './pages/AccountOrderHistory'
+import FyersCallbackPage from './pages/FyersCallbackPage'
 
 const charts = ['NIFTY CE', 'NIFTY PE', 'Nifty Spot smaller TF', 'Nifty Spot higher TF']
 
@@ -28,6 +29,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/account" element={<AccountOrderHistory />} />
+        <Route path="/auth/callback" element={<FyersCallbackPage />} />
       </Routes>
     </BrowserRouter>
   )
